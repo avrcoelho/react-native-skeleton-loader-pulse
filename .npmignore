@@ -12,3 +12,5 @@ demo.gif
 storybook
 stories
 ./*.js
+.prettierrc.js
+.gitattributes

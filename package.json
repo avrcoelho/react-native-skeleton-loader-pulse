@@ -1,0 +1,44 @@
+{
+  "name": "react-native-skeleton-loader-pulse",
+  "version": "1.0.5",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactnative",
+    "native",
+    "load",
+    "loader",
+    "pulse",
+    "animation"
+  ],
+  "author": "André Coelho",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avrcoelho/react-native-skeleton-loader-pulse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avrcoelho/react-native-skeleton-loader-pulse/issues"
+  },
+  "homepage": "https://github.com/avrcoelho/react-native-skeleton-loader-pulse",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "storybook": "start-storybook -p 7007"
+  },
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": ">= 16.8.1",
+    "react-native": ">=0.60.0-rc.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@types/react-native": "^0.62.4",
+    "babel-loader": "^8.1.0",
+    "react": "^16.9.0",
+    "react-native": "^0.61.5",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}

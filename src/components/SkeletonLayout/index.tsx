@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { Animated, View } from 'react-native';
 
 import { container, loader } from './styles';
@@ -77,7 +77,7 @@ export const SkeletonLayout: React.FC<Props> = ({
     ).start();
   }, [opacity, pulseTime]);
 
-  function checkValue(value: string | number) {
+  const checkValue = useCallback((value: string | number) => {
     const regexPorcent = /^([0-9]{1,})%$/;
     const regex = /^([0-9]{1,})([a-zA-Z]{1,})$/;
     const regexNum = /^([0-9]{1,})$/;
@@ -91,7 +91,7 @@ export const SkeletonLayout: React.FC<Props> = ({
     }
 
     return value;
-  }
+  }, []);
 
   const formatStylesContaoner = useMemo(
     () =>

@@ -15,3 +15,7 @@ stories
 .prettierrc.js
 .gitattributes
 Podfile
+
+react-native-skeleton-loader-pulse.podspec
+ios
+android

@@ -1,7 +1,7 @@
 {
   "name": "react-native-skeleton-loader-pulse",
   "description": "Skeleton Loader Pulse for React Native",
-  "version": "1.0.87",
+  "version": "1.0.89",
   "main": "dist/index.js",
   "license": "MIT",
   "keywords": [

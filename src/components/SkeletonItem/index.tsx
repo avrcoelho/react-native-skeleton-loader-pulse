@@ -75,14 +75,14 @@ export const SkeletonItem: React.FC<Props> = ({
   function checkValue(value: string | number) {
     const regexPorcent = /^([0-9]{1,})%$/;
     const regex = /^([0-9]{1,})([a-zA-Z]{1,})$/;
-    const regexNum = /^([0-9]{1,})$/;
+    const regexNum = /(\d+(?:\.\d+)?)/;
 
     if (regexPorcent.test(String(value))) {
       return value;
     } else if (regex.test(String(value))) {
       return Number(String(value).replace(/[a-zA-Z]/g, ''));
     } else if (regexNum.test(String(value))) {
-      return value;
+      return Number(value);
     }
 
     return value;
